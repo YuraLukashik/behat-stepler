@@ -83,9 +83,10 @@ final class SteplerController implements Controller
         return 0;
     }
     
-    private function findSuite()
+    private function findSuite123()
     {
         $suites = $this->suiteRepository->getSuites();
+        $a = 1;
         
         if (count($suites) > 0 && null === $this->suite) {
             return $suites[0];
